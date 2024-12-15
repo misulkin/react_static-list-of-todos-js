@@ -1,5 +1,5 @@
-export const UserInfo = ({ task }) => (
-  <a className="UserInfo" href={task.user.email}>
-    {task.user.username}
+export const UserInfo = ({ user }) => (
+  <a className="UserInfo" href={`mailto:${user.email}`}>
+    {user.name}
   </a>
 );
